@@ -15,17 +15,17 @@ export default function HomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground
-        source={require("../../images/shopping.jpg")}
+        source={require("../../images/background.jpg")}
         resizeMode="cover"
         style={styles.background}
       >
         <Image
           style={styles.logo}
-          source={require("../../images/hustlr.png")}
+          source={{ uri: 'https://marketplace.canva.com/EAFzjXx_i5w/1/0/1600w/canva-blue-illustrative-e-commerce-online-shop-logo-fZejT2DpGCw.jpg' }}
         />
         <View style={styles.homeText}>
-          <Text style={styles.title}>Hustlr</Text>
-          <Text style={styles.subTitle}>Find the best clothes for you</Text>
+        <Text style={styles.title}>TrendyMart</Text>
+        <Text style={styles.subTitle}>Your one-stop shop for all things trendy!</Text>
         </View>
         <View style={styles.buttonContainer}>
           <TouchableOpacity
@@ -55,6 +55,9 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    height: "100%",
   },
   logo: {
     width: 200,

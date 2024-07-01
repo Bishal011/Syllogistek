@@ -70,7 +70,9 @@ const LoginScreen = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.topImageContainer}>
         <Image
-          source={require("../../assets/topVector.png")}
+          source={{
+            uri: "https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg",
+          }}
           style={styles.topImage}
         />
       </View>
